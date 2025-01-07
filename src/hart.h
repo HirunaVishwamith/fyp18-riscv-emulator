@@ -1340,7 +1340,7 @@ public:
                   break;
                 }
 
-                printf("load_address: %016lx, data: %lu , core: %lu \n", load_addr, load_data , mhartid);
+                // printf("load_address: %016lx, data: %lu , core: %lu \n", load_addr, load_data , mhartid);
               }
               else
               {
@@ -1515,7 +1515,7 @@ public:
                 break;
               }
 
-              printf("store_address: %016lx, data: %lu , core: %lu \n", store_addr, reg_file[rs2], mhartid );
+              // printf("store_address: %016lx, data: %lu , core: %lu \n", store_addr, reg_file[rs2], mhartid );
             }
             else
             {

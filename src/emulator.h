@@ -6,7 +6,7 @@
  */
 
 #define MEM_SIZE 28
-#define NUM_HARTS 1
+#define NUM_HARTS 2
 
 /* EMULATOR INCLUDE HEADER FILES */
 
