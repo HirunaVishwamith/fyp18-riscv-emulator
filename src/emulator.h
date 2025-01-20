@@ -72,6 +72,14 @@ public:
     for (auto &r : harts)
       r.hart_step(memory);
 
+    // uint64_t loc0 = 10001600;
+    // uint64_t loc1 = 10001604;
+    // uint64_t db = 10000000;
+    // int m0 = memory.at((loc0 - db) / 8);
+    // int m1 = memory.at((loc1 - db) / 8);
+
+    // printf("m0: %d m1: %d\n", m0, m1);
+    // 0000000010001600
 
   }
 

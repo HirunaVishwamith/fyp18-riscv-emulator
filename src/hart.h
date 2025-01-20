@@ -1529,6 +1529,11 @@ public:
         else
         {
           cout << (char)reg_file[rs2] << flush;
+            printf("Hi");
+            int out_char = reg_file[rs2]; // Extract 8-bit char
+            printf(" %d out_char:\n", out_char);
+            cout << out_char; // Print to terminal
+            cout.flush();
         }
         break;
       case iops:

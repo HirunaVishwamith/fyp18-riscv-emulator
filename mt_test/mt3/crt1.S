@@ -77,7 +77,13 @@ finish_stack:
 	li		a1,0					# a1 = argv = NULL
 	li		a2,0					# a2 = envp = NULL (this is a very common non-standard feature)
 
-	call main
+	lui     a5,0xe000
+	addi    a5,a5,259
+	slli    a5,a5,0x4
+	#li		a4,0x00002
+	csrrs	x10,mhartid,x0			# load my hart ID into 0x10
+	sw      a0,0(a5)
+	#call main
 
 	# abort execution here
 

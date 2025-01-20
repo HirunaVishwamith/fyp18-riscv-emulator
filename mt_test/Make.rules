@@ -1,5 +1,5 @@
 ARCH=riscv64-unknown-elf
-GNU_DIR=/media/hv/Data/OOO_Processor/riscv
+GNU_DIR=/media/hv/D1/OOO_Processor/riscv
 GNU_BIN=$(GNU_DIR)/bin
 
 
